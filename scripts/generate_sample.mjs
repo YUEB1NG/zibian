@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import Module from '../frontend/node_modules/manifold-3d/manifold.js';
+import {createEngine} from '../frontend/prototype-v2/model-engine/core.js';
+const data=JSON.parse(fs.readFileSync(new URL('../frontend/prototype-v2/model-engine/glyphs.json',import.meta.url),'utf8'));
+const module=await Module();module.setup();
+const result=createEngine(module,data)({front:'LOVE',side:'HOME'});
+fs.writeFileSync(new URL('../frontend/prototype-v2/public/demo.stl',import.meta.url),new Uint8Array(result.buffer));
+const {buffer,...metadata}=result;
+fs.writeFileSync(new URL('../docs/sample-model.json',import.meta.url),JSON.stringify(metadata,null,2));
+console.log(JSON.stringify(metadata));

@@ -1,0 +1,120 @@
+{
+  "url": "http://127.0.0.1:8879/",
+  "status": "passed",
+  "results": [
+    {
+      "width": 1440,
+      "original": {
+        "triangles": 3836,
+        "dimensions": [
+          140.3260612487793,
+          142.86319255828857,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ff66fd8ba5a204268edfb672be44728263935aca56ba7c0781c1bf85d8898de3"
+      },
+      "changed": {
+        "triangles": 5960,
+        "dimensions": [
+          144.99515056610107,
+          145.8332176208496,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ef969947092362448b98c1f1603ba8b35b4c5927aa21479419bbaea052340408"
+      },
+      "special": {
+        "triangles": 8592,
+        "dimensions": [
+          122.17816543579102,
+          118.08699989318848,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ce1166c608259a0dbf7732b6ecb5424bee84bfbdcef364087d6e61dd532d7df3"
+      },
+      "abovePrice": true,
+      "exactPreviewBytes": true,
+      "rotationUnchanged": true,
+      "invalidInputBlocked": true
+    },
+    {
+      "width": 393,
+      "original": {
+        "triangles": 3836,
+        "dimensions": [
+          140.3260612487793,
+          142.86319255828857,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ff66fd8ba5a204268edfb672be44728263935aca56ba7c0781c1bf85d8898de3"
+      },
+      "changed": {
+        "triangles": 5960,
+        "dimensions": [
+          144.99515056610107,
+          145.8332176208496,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ef969947092362448b98c1f1603ba8b35b4c5927aa21479419bbaea052340408"
+      },
+      "special": {
+        "triangles": 8592,
+        "dimensions": [
+          122.17816543579102,
+          118.08699989318848,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ce1166c608259a0dbf7732b6ecb5424bee84bfbdcef364087d6e61dd532d7df3"
+      },
+      "abovePrice": true,
+      "exactPreviewBytes": true,
+      "rotationUnchanged": true,
+      "invalidInputBlocked": true
+    },
+    {
+      "width": 320,
+      "original": {
+        "triangles": 3836,
+        "dimensions": [
+          140.3260612487793,
+          142.86319255828857,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ff66fd8ba5a204268edfb672be44728263935aca56ba7c0781c1bf85d8898de3"
+      },
+      "changed": {
+        "triangles": 5960,
+        "dimensions": [
+          144.99515056610107,
+          145.8332176208496,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ef969947092362448b98c1f1603ba8b35b4c5927aa21479419bbaea052340408"
+      },
+      "special": {
+        "triangles": 8592,
+        "dimensions": [
+          122.17816543579102,
+          118.08699989318848,
+          32.79999923706055
+        ],
+        "bottom": 0,
+        "sha256": "ce1166c608259a0dbf7732b6ecb5424bee84bfbdcef364087d6e61dd532d7df3"
+      },
+      "abovePrice": true,
+      "exactPreviewBytes": true,
+      "rotationUnchanged": true,
+      "invalidInputBlocked": true
+    }
+  ],
+  "failedGenerationBlocked": true,
+  "malformedBinaryBlocked": true,
+  "errors": []
+}

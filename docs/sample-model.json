@@ -1,0 +1,21 @@
+{
+  "baseArea": 6580.707925044303,
+  "spec": {
+    "front": "LOVE",
+    "side": "HOME",
+    "height": 30,
+    "base": 3,
+    "spacing": 3
+  },
+  "dimensions": [
+    140.32605810686945,
+    142.86319920346142,
+    32.8
+  ],
+  "triangles": 3836,
+  "volume": 33226.32917285727,
+  "components": 1,
+  "watertight": true,
+  "warnings": [],
+  "seconds": 0.0625472
+}

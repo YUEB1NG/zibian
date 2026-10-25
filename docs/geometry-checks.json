@@ -1,0 +1,174 @@
+{
+  "font": "Arimo",
+  "glyphsChecked": 38,
+  "models": [
+    {
+      "baseArea": 6580.707925044303,
+      "spec": {
+        "front": "LOVE",
+        "side": "HOME",
+        "height": 30,
+        "base": 3,
+        "spacing": 3
+      },
+      "dimensions": [
+        140.32605810686945,
+        142.86319920346142,
+        32.8
+      ],
+      "triangles": 3836,
+      "volume": 33226.32917285727,
+      "components": 1,
+      "watertight": true,
+      "warnings": [],
+      "seconds": 0.0633547
+    },
+    {
+      "baseArea": 6786.2946287329505,
+      "spec": {
+        "front": "MARS",
+        "side": "HOME",
+        "height": 30,
+        "base": 3,
+        "spacing": 3
+      },
+      "dimensions": [
+        144.99515369832517,
+        145.83321745097635,
+        32.8
+      ],
+      "triangles": 5960,
+      "volume": 35208.09539281742,
+      "components": 1,
+      "watertight": true,
+      "warnings": [],
+      "seconds": 0.0439676
+    },
+    {
+      "baseArea": 8931.348033458828,
+      "spec": {
+        "front": "HELLO",
+        "side": "WORLD",
+        "height": 30,
+        "base": 3,
+        "spacing": 3
+      },
+      "dimensions": [
+        162.40261847153306,
+        181.0480328992009,
+        32.8
+      ],
+      "triangles": 4422,
+      "volume": 41519.43704727498,
+      "components": 1,
+      "watertight": true,
+      "warnings": [],
+      "seconds": 0.031317500000000026
+    },
+    {
+      "baseArea": 5951.648001077947,
+      "spec": {
+        "front": "ALICE",
+        "side": "BOB",
+        "height": 30,
+        "base": 3,
+        "spacing": 3
+      },
+      "dimensions": [
+        137.90317381247877,
+        118.10840905532241,
+        32.8
+      ],
+      "triangles": 3048,
+      "volume": 27258.51579024539,
+      "components": 1,
+      "watertight": true,
+      "warnings": [],
+      "seconds": 0.026537100000000008
+    },
+    {
+      "baseArea": 2650.6464597395175,
+      "spec": {
+        "front": "QI",
+        "side": "SKY",
+        "height": 30,
+        "base": 3,
+        "spacing": 3
+      },
+      "dimensions": [
+        58.97754357978701,
+        92.90267035737634,
+        32.8
+      ],
+      "triangles": 3334,
+      "volume": 10949.793552880301,
+      "components": 1,
+      "watertight": true,
+      "warnings": [],
+      "seconds": 0.025661999999999976
+    },
+    {
+      "baseArea": 4989.62445544005,
+      "spec": {
+        "front": "A&/B",
+        "side": "2026",
+        "height": 30,
+        "base": 3,
+        "spacing": 3
+      },
+      "dimensions": [
+        122.17816407233477,
+        118.08699807822704,
+        32.8
+      ],
+      "triangles": 8592,
+      "volume": 23480.800848165192,
+      "components": 1,
+      "watertight": true,
+      "warnings": [],
+      "seconds": 0.062303
+    },
+    {
+      "baseArea": 1358.3760491773864,
+      "spec": {
+        "front": "A",
+        "side": "B",
+        "height": 30,
+        "base": 3,
+        "spacing": 3
+      },
+      "dimensions": [
+        52.122472105175255,
+        52.122472105175255,
+        32.8
+      ],
+      "triangles": 1412,
+      "volume": 7089.948989297241,
+      "components": 1,
+      "watertight": true,
+      "warnings": [],
+      "seconds": 0.009608299999999986
+    },
+    {
+      "baseArea": 22376.84021238609,
+      "spec": {
+        "front": "LONGERNAME12",
+        "side": "MYNAME123456",
+        "height": 30,
+        "base": 3,
+        "spacing": 3
+      },
+      "dimensions": [
+        367.3753946766257,
+        344.5492881886661,
+        32.8
+      ],
+      "triangles": 13590,
+      "volume": 98037.4771342154,
+      "components": 1,
+      "watertight": true,
+      "warnings": [],
+      "seconds": 0.09433620000000002
+    }
+  ]
+}
