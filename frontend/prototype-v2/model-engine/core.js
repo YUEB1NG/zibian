@@ -39,7 +39,7 @@ export function createEngine(module,data){
 }
 export function binarySTL(mesh){
  const n=mesh.triVerts.length/3,buffer=new ArrayBuffer(84+n*50),view=new DataView(buffer);
- const label=new TextEncoder().encode('Zi Bian - original glyphs / Manifold');new Uint8Array(buffer,0,label.length).set(label);view.setUint32(80,n,true);
+ const label=new TextEncoder().encode('zibian - original glyphs / Manifold');new Uint8Array(buffer,0,label.length).set(label);view.setUint32(80,n,true);
  const p=mesh.vertProperties,stride=mesh.numProp,t=mesh.triVerts;
  for(let i=0;i<n;i++){
   const a=t[i*3]*stride,b=t[i*3+1]*stride,c=t[i*3+2]*stride,ux=p[b]-p[a],uy=p[b+1]-p[a+1],uz=p[b+2]-p[a+2],vx=p[c]-p[a],vy=p[c+1]-p[a+1],vz=p[c+2]-p[a+2];

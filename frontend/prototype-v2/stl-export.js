@@ -1,7 +1,7 @@
 // Download the original millimetre-space mesh, never the transformed display mesh.
 export function stlFilename(words){
  const safe=value=>String(value).replace(/&/g,'AND').replace(/\//g,'SLASH').replace(/[^A-Z0-9_-]/gi,'_').slice(0,60)||'WORD';
- return `zi-bian_${safe(words.front)}_${safe(words.side)}.stl`;
+ return `zibian_${safe(words.front)}_${safe(words.side)}.stl`;
 }
 export function stlBlob(buffer){
  if(!(buffer instanceof ArrayBuffer)||buffer.byteLength<134)throw new Error('模型文件不完整 请重新生成');

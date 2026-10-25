@@ -6,7 +6,7 @@ import {stlBlob,stlFilename} from '../frontend/prototype-v2/stl-export.js';
 const url=process.argv[2]||'http://127.0.0.1:8877/';
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const output='data/stl-export-checks';fs.mkdirSync(output,{recursive:true});fs.mkdirSync('docs',{recursive:true});
-assert.equal(stlFilename({front:'A&/B',side:'2026'}),'zi-bian_AANDSLASHB_2026.stl');
+assert.equal(stlFilename({front:'A&/B',side:'2026'}),'zibian_AANDSLASHB_2026.stl');
 for(const invalid of [null,new ArrayBuffer(80),new ArrayBuffer(134)])assert.throws(()=>stlBlob(invalid));
 const bad=new ArrayBuffer(134),badView=new DataView(bad);badView.setUint32(80,1,true);badView.setFloat32(96,NaN,true);assert.throws(()=>stlBlob(bad));
 function geometry(bytes){
@@ -24,14 +24,14 @@ try{
   const action=p.getByRole('button',{name:'导出 STL',exact:true});await action.scrollIntoViewIfNeeded();await p.waitForTimeout(600);
   const actionBounds=await action.boundingBox(),price=await p.locator('.purchase-info').boundingBox();assert(actionBounds.y+actionBounds.height<=price.y);assert.equal(await p.locator('.checkout').count(),0);
   async function download(stem){const pending=p.waitForEvent('download',{timeout:30000});await action.click();const d=await pending;assert.equal(await d.failure(),null);await d.saveAs(`${output}/${width}-${stem}.stl`);return {bytes:fs.readFileSync(`${output}/${width}-${stem}.stl`),name:d.suggestedFilename()};}
-  const original=await download('original');assert.equal(original.name,'zi-bian_LOVE_HOME.stl');const sample=Buffer.from(await (await p.request.get(url+'demo.stl')).body());assert.equal(hash(original.bytes),hash(sample));
+  const original=await download('original');assert.equal(original.name,'zibian_LOVE_HOME.stl');const sample=Buffer.from(await (await p.request.get(url+'demo.stl')).body());assert.equal(hash(original.bytes),hash(sample));
   await p.getByRole('button',{name:'看另一面',exact:true}).click();await p.waitForTimeout(500);
   const rotated=await download('rotated');assert.equal(hash(rotated.bytes),hash(original.bytes),'Display rotation must not affect STL');
-  await p.getByLabel('第一面文字',{exact:true}).fill('MARS');const changed=await download('changed');assert.equal(changed.name,'zi-bian_MARS_HOME.stl');assert.notEqual(hash(changed.bytes),hash(original.bytes));assert.equal(hash(changed.bytes),hash(Buffer.from(await p.evaluate(()=>window.generatedSTL))),'Must download exactly the newly generated preview buffer');
+  await p.getByLabel('第一面文字',{exact:true}).fill('MARS');const changed=await download('changed');assert.equal(changed.name,'zibian_MARS_HOME.stl');assert.notEqual(hash(changed.bytes),hash(original.bytes));assert.equal(hash(changed.bytes),hash(Buffer.from(await p.evaluate(()=>window.generatedSTL))),'Must download exactly the newly generated preview buffer');
   await p.getByRole('button',{name:'预览摆件',exact:true}).click();await p.getByRole('dialog',{name:'预览摆件'}).getByText('MARS / HOME',{exact:true}).waitFor();await p.getByRole('button',{name:'关闭预览'}).click();await p.locator('dialog').waitFor({state:'detached'});
   let unexpected=0;const countDownload=()=>unexpected++;p.on('download',countDownload);
   await p.getByLabel('第一面文字',{exact:true}).fill('中文');await action.click();await p.getByRole('alert').waitFor();await p.waitForTimeout(500);assert.equal(unexpected,0,'Invalid input must not export a stale model');p.off('download',countDownload);
-  await p.getByLabel('第一面文字',{exact:true}).fill('A&/B');await p.getByLabel('第二面文字',{exact:true}).fill('2026');const special=await download('special');assert.equal(special.name,'zi-bian_AANDSLASHB_2026.stl');assert.equal(hash(special.bytes),hash(Buffer.from(await p.evaluate(()=>window.generatedSTL))));
+  await p.getByLabel('第一面文字',{exact:true}).fill('A&/B');await p.getByLabel('第二面文字',{exact:true}).fill('2026');const special=await download('special');assert.equal(special.name,'zibian_AANDSLASHB_2026.stl');assert.equal(hash(special.bytes),hash(Buffer.from(await p.evaluate(()=>window.generatedSTL))));
   assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await p.screenshot({path:`docs/stl-export-${width}.png`,fullPage:true});
   results.push({width,original:geometry(original.bytes),changed:geometry(changed.bytes),special:geometry(special.bytes),abovePrice:true,exactPreviewBytes:true,rotationUnchanged:true,invalidInputBlocked:true});await p.close();
  }

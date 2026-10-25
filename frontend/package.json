@@ -1,5 +1,5 @@
 {
-  "name": "zi-bian-studio",
+  "name": "zibian-studio",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -37,6 +37,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YUEB1NG/zi-bian.git"
+    "url": "https://github.com/YUEB1NG/zibian.git"
   }
 }
