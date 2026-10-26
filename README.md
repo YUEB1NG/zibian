@@ -17,6 +17,17 @@
 | Manifold WebAssembly 在浏览器中计算 | 拖动回弹 接近读字角度时轻微吸附 | 下载当前文字的毫米坐标网格 |
 | 每面 1–12 位英文 数字 `&` `/` | 保留完整矩形底座与两面正视视角 | 改字后自动重新生成 防止下载旧模型 |
 
+
+## 在线体验与模型示例
+
+[在线体验](https://yueb1ng.github.io/zibian/) · [预发布版本与 STL 样品](https://github.com/YUEB1NG/zibian/releases/tag/v0.1.0-web-preview) · [可复现示例](docs/EXAMPLES.md) · [贡献说明](CONTRIBUTING.md)
+
+在线版从本仓库构建，使用开源 Arimo 字形。以下为同一个 LOVE / HOME 模型的浏览器渲染，不是实际打印照片：
+
+| 第一面 LOVE | 第二面 HOME |
+| --- | --- |
+| ![LOVE 正面](docs/front.png) | ![HOME 侧面](docs/side.png) |
+
 ## 快速开始
 
 需要 Node.js **22.12 或更新的受支持版本**。

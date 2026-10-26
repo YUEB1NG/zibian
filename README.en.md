@@ -17,6 +17,17 @@ Generate dual-view 3D lettering in your browser, inspect both faces, and export 
 | Browser-based Manifold WebAssembly | Spring-back dragging with gentle resistance near reading angles | Download the current millimetre-space mesh |
 | 1–12 characters per side: A–Z, 0–9, `&`, `/` | Complete rectangular base and aligned front/side views | Edited text is regenerated before download |
 
+
+## Try it and inspect the sample
+
+[Live demo](https://yueb1ng.github.io/zibian/) · [Preview release and sample STL](https://github.com/YUEB1NG/zibian/releases/tag/v0.1.0-web-preview) · [Reproducible examples](docs/EXAMPLES.md) · [Contributing](CONTRIBUTING.md)
+
+The live demo is built from this repository with the open Arimo glyph bank. These are two browser renders of the same LOVE / HOME mesh, not physical-print photographs:
+
+| Front: LOVE | Side: HOME |
+| --- | --- |
+| ![LOVE front view](docs/front.png) | ![HOME side view](docs/side.png) |
+
 ## Quick start
 
 Use **Node.js 22.12 or a newer supported version**.
