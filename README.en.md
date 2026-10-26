@@ -1,4 +1,6 @@
-<p align="center"><img src="docs/brand/cover.svg" width="100%" alt="zibian" /></p>
+<p align="center"><img src="docs/brand/cover-ai-20261026.png" width="100%" alt="zibian" /></p>
+
+<p align="center"><sub>AI concept cover · Actual screenshots and geometry remain documented below</sub></p>
 <p align="center"><a href="README.md">简体中文</a> · <b>English</b></p>
 <p align="center"><a href="https://github.com/YUEB1NG/zibian/actions/workflows/build.yml"><img src="https://github.com/YUEB1NG/zibian/actions/workflows/build.yml/badge.svg" alt="Build checks" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-111827?style=flat-square" alt="MIT license" /></a> <img src="https://img.shields.io/badge/WebAssembly-STL-2563eb?style=flat-square" alt="WebAssembly-STL" /></p>
 
